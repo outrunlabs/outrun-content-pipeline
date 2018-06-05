@@ -1,5 +1,5 @@
 {
-    "name": "outrun-game-core",
+    "name": "outrun-content-pipeline",
     "version": "0.0.1",
     "description": "Functional core for developing web games",
     "main": "lib/index.js",
