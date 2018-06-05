@@ -46,7 +46,8 @@
         "oni-types": "^0.0.8",
         "react": "^16.3.2",
         "react-dom": "^16.3.2",
-        "redux": "^4.0.0"
+        "redux": "^4.0.0",
+        "text-encoding": "^0.6.4"
     },
     "devDependencies": {
         "@types/jest": "^22.2.3",
