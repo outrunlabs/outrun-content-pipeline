@@ -1,23 +1,4 @@
-export type Byte = number
-
-export interface Color {
-    r: Byte
-    b: Byte
-    g: Byte
-    a: Byte
-}
-
-export interface Importer<T> {
-    convert(url: string): Promise<T>
-}
-
-export interface Writer<T> {
-    write(item: T): Promise<ArrayBuffer>
-}
-
-export interface Reader<T> {
-    read(buffer: ArrayBuffer): Promise<T>
-}
+import { Color } from "./Types"
 
 export class TextureContent {
     private _colors: Color[]
@@ -43,8 +24,4 @@ export class TextureContent {
         const off = y * this._width + x
         return this._colors[off]
     }
-}
-
-export interface Texture {
-    image: HTMLImageElement
 }
