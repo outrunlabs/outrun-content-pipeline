@@ -1,7 +1,7 @@
 export const getEncoder = (): TextEncoder => {
     let ctor = null
-    if (window && window.TextEncoder) {
-        ctor = window.TextEncoder
+    if (typeof TextEncoder !== "undefined") {
+        ctor = TextEncoder
     } else {
         ctor = require("text-encoding").TextEncoder
     }
@@ -11,8 +11,8 @@ export const getEncoder = (): TextEncoder => {
 
 export const getDecoder = (): TextDecoder => {
     let ctor = null
-    if (window && window.TextDecoder) {
-        ctor = window.TextDecoder
+    if (typeof TextDecoder !== "undefined") {
+        ctor = TextDecoder
     } else {
         ctor = require("text-encoding").TextDecoder
     }
