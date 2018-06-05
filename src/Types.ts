@@ -12,7 +12,7 @@ export interface Importer<T> {
 }
 
 export interface Writer<T> {
-    writer(item: T): Promise<ArrayBuffer>
+    write(item: T): Promise<ArrayBuffer>
 }
 
 export class TextureContent {
