@@ -7,6 +7,9 @@
     "directories": {
         "test": "test"
     },
+    "bin": {
+        "content": "./cli.js"
+    },
     "scripts": {
         "precommit": "pretty-quick --staged",
         "build": "tsc",
@@ -22,7 +25,14 @@
             "^.+\\.tsx?$": "ts-jest"
         },
         "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-        "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js",
+            "jsx",
+            "json",
+            "node"
+        ]
     },
     "author": "Outrun Labs, LLC",
     "license": "GPL-3.0",
@@ -31,6 +41,8 @@
     },
     "homepage": "https://github.com/outrunlabs/outrun-game-core#readme",
     "dependencies": {
+        "@types/minimist": "^1.2.0",
+        "minimist": "^1.2.0",
         "oni-types": "^0.0.8",
         "react": "^16.3.2",
         "react-dom": "^16.3.2",
