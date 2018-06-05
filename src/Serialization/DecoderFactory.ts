@@ -14,7 +14,7 @@ export const getDecoder = (): TextDecoder => {
     if (window && window.TextDecoder) {
         ctor = window.TextDecoder
     } else {
-        ctor = require("text-encoding")
+        ctor = require("text-encoding").TextDecoder
     }
 
     return new ctor()
