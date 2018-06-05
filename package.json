@@ -32,7 +32,10 @@
             "jsx",
             "json",
             "node"
-        ]
+        ],
+        "testEnvironmentOptions": {
+            "resources": "usable"
+        }
     },
     "author": "Outrun Labs, LLC",
     "license": "GPL-3.0",
@@ -42,6 +45,7 @@
     "homepage": "https://github.com/outrunlabs/outrun-game-core#readme",
     "dependencies": {
         "@types/minimist": "^1.2.0",
+        "canvas-prebuilt": "^1.6.5-prerelease.1",
         "minimist": "^1.2.0",
         "oni-types": "^0.0.8",
         "react": "^16.3.2",
